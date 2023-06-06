@@ -1,0 +1,23 @@
+head{
+    background: white;
+}
+
+.portal{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: #111;
+
+}
+.portal__items{
+
+height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    border-radius: 5px;
+    background: #000;
+    padding-left: 10px;
+    size: 17px;
+    border: 2px solid #222222;
+}
