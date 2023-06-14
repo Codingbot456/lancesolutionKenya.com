@@ -6,18 +6,19 @@ head{
     width: 100%;
     position: relative;
     bottom: 0;
-    background: #111;
+    background: whitesmoke;
 
 }
 .portal__items{
 
-height: 45px;
-    width: 100%;
+height: 45vh;
+    width: 250px;
     outline: none;
-    color: #d9d9d9;
+    color: blue;
     border-radius: 5px;
-    background: #000;
+    background:white;
     padding-left: 10px;
     size: 17px;
     border: 2px solid #222222;
+    cursor: pointer;
 }

@@ -14,9 +14,13 @@
     justify-content: auto;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 999;
+}
+.navbar:hover{
+    background: white;
+    transition:0.25s ease-in-out
 }
 #nav__logo{
     color: black;
@@ -85,7 +89,7 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: red;
+    background: linear-gradient(blue,red);
     color:white;
 
 }
@@ -114,9 +118,9 @@
         width: 100%;
         position:absolute;
         transition: all 0.5s ease-in-out;
-        height: 5ohv;
+        height: 50hv;
         z-index: -1;
-        background: black;
+        background: whitesmoke;
     }
     .navbar__menu.active{
         top: 100%;
@@ -134,7 +138,7 @@
          height: 3px;
          margin: 5px auto;
          transition: all 0.3s ease ease-in-out;
-         background: black;
+         background: whitesmoke;
         }
         .navbar__item{
             width: 100%;
@@ -242,26 +246,29 @@
 
 /* hero section css*/
 .main{
-    background-color: #141414;
+    background-color: white;
 }
 .main__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
     justify-self: center;
-    margin: 0 auto;
-    height: 70vh;
-    background-color: #141414;
+    margin: 20px;
+    border-radius: 40px;
+    height: 60vh;
+    background-color:whitesmoke;
     z-index: 1;
     width:100% ;
     max-width: 1300px;
     padding: 0 50px;
+    box-shadow: black;
+}
+.main__container:hover{
+    background-color: blue;
 }
 .main__content h1{
     font-size: 4rem;
-    background-color: BLACK;
-    background-image: linear-gradient(to top,#ff0844 0% ,white 100%);
-    background-size: 100% ;
+    background-color: white;
+    background-image: linear-gradient(to top,black 80% ,white 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -272,7 +279,6 @@
     font: 4rem;
     background-color: red;
     background-image: linear-gradient(to top, white 0%, blue 100%);
-    background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -282,7 +288,7 @@
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
-    color: white;
+    color: black;
 }
 .main__btn {
     font-size: 1rem;
@@ -377,24 +383,24 @@
     
 /*packages section*/
 .packages{
-    background:black;
+    background:whitesmoke;
     display: flex;
     flex-direction: column;
+    height: 80vh;
+    margin: 20px;
+    border-radius: 40px;
     align-items: center;
-    height: 100vh;
-    margin-bottom: 0 black;
 }
+.packages:hover{
+    background: blue;
+    transition: 0.25s ease-out;
+}
+
+
 .packages h1 {
-    background-color:blue;
-    background-image: linear-gradient( 
-    to right,
-    #ff8157 0%,
-    #ff867a 0%,
-    #ff8c7f 21%, 
-    #f99185 52%,
-    #cf556c 78%,
-    #b12a5b 100%
-    );
+    background-color:black;
+    color: black;
+    background-image: black;
     background-size: 100%;
     margin-bottom: 1rem;
     font-size: 2.5rem;
@@ -411,15 +417,14 @@
 }
 .packages__card{
     margin: 1rem;
-    height:500px;
-    width: 400px;
+    height:200px;
+    width: 150px;
+    margin-right:70px;
+    margin-left: -30px;
+    padding-right: 100px;
     border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0 ,0, 0, 0) 0%,
-    rgba(17, 17, 17, 0.6) 100%),
-    url('/images/pic2.jpeg');
-    background-size: cover;
     position: relative;
-    color: white;
+    color:white;
     justify-content: space-between;
     display: flex;
 }
@@ -434,20 +439,22 @@ img{
     url('/images/pic2.jpg');
     }
     img{
-        height: 525px;
-        width: 440px;
+        height: 1px;
+        width: 1px;
 
 }
 .packages h2 {
     position: absolute;
-    top: 350px;
-    left: 30px;
-    background: black;
+    top: 230px;
+    left: 10px;
+    color: black;
+    font-size: 20px;
 }
 .packages__card p {
     position: absolute;
-    top:400px;
-    left: 30px;
+    top:200px;
+    left: 10px;
+    color: black;
 }
 .packages__card button{
     color:white;
@@ -455,9 +462,9 @@ img{
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background:red;
     position: absolute;
-    top: 440px;
+    top: 300px;
     left: 30px;
     font-size: 2rem;
     cursor: pointer;
@@ -504,24 +511,25 @@ img{
 
 /*services section css*/
 .services{
-    background:black;
+    background:whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    margin-bottom: 0 black;
+    height: 60vh;
+    margin: auto 20px;
+    border-radius: 40px;
+    justify-self: center;
+    max-width: 100%;
 }
+.services:hover{
+    background-color: blue;
+    transition: 1..25s ease-out;
+}
+
 .services h1 {
-    background-color:blue;
-    background-image: linear-gradient( 
-    to right,
-    #ff8157 0%,
-    #ff867a 0%,
-    #ff8c7f 21%, 
-    #f99185 52%,
-    #cf556c 78%,
-    #b12a5b 100%
-    );
+    background-color:black;
+   color: black;
+   border-radius: 100px;
     background-size: 100%;
     margin-bottom: 1rem;
     font-size: 2.5rem;
@@ -535,23 +543,28 @@ img{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+   background:white;
 }
 .services__card{
-    margin: 1rem;
-    height:500px;
+
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height:275px;
     width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0 ,0, 0, 0) 0%,
-    rgba(17, 17, 17, 0.6) 100%),
+    border-radius: 40px;
+    background-image: linear-gradient(white,blue)
     url('/images/pic2.jpeg');
     background-size: cover;
     position: relative;
-    color: white;
+    color:black;
     display: flex;
+    text-align: center;
 }
 img{
-    height: 525px;
+    height: 275px;
     width: 400px;
+    border-radius: 10px;
 }
 .services__card:nth-child(2){
     background-image: linear-gradient(to bottom, rgba(0 ,0, 0, 0) 0%,
@@ -560,14 +573,16 @@ img{
     url('/images/pic2.jpg');
     }
     img{
-        height: 525px;
+        height: 275px;
         width: 440px;
 
 }
 .services h2 {
     position: absolute;
-    top: 350px;
+    top: 200px;
     left: 30px;
+    background: white;
+    border-radius: 100px;
 }
 .services__card p {
     position: absolute;
@@ -575,15 +590,15 @@ img{
     left: 30px;
 }
 .services__card button{
-    color:white;
+    color:black;
     padding: 10px 20px;
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background:red 10px;
     position: absolute;
-    top: 440px;
-    left: 30px;
+    top: 240px;
+    left: 80px;
     font-size: 2rem;
     cursor: pointer;
 }
@@ -624,8 +639,10 @@ footer{
     width: 100%;
     position: relative;
     bottom: 0;
-    background: #111;
+    background: whitesmoke;
     cursor: pointer;
+    border-radius: 40px;
+    margin: 20px;
 
 }
 
@@ -638,7 +655,7 @@ footer .content{
     justify-content: space-between;
 }
 footer .content p,a{
-    color: white;
+    color: black;
 }
 
 footer .content  .box{
@@ -647,7 +664,7 @@ footer .content  .box{
 footer .content .topic{
     font-size: 22px;
     font-weight: 600;
-    color: white;
+    color: blue;
     margin-bottom: 16px;
 }
 
@@ -701,7 +718,8 @@ footer .content .right input[type="submit"]:hover{
 }
 footer .content .media-icons a{
 font-size: 16px;
-color: red;
+background-color: blue;
+color: white;
 height: 45px;
 width: 45px;
 display: inline-block;
@@ -711,8 +729,10 @@ border-radius: 5px;
 border: 2px solid #222222;
 margin: 30px 5px 0 0;
 }
-.content .media-icons a{
-    border-color: orangered;
+ .content .media-icons :hover{
+    background: white;
+    color: red;
+    transition: 0.3s ease-out;
 }
 footer .bottom{
 width: 100%;
@@ -731,37 +751,43 @@ footer a:hover{
 }
 
 
-/*locatio*/
+/*location*/
 .location__about{
-    background: white;
    display: grid;
    grid-template-columns: 1fr 1fr;
    padding: 20px;
    cursor: pointer;
-   background: black;
+   background: whitesmoke;
+   margin: 20px;
+   border-radius: 40px;
+}
+.location__about:hover{
+    background-color: blue;
+    transition: 0.25s ease-out;
 }
 .Location{
-    background-color: blue;
+    background-color: white;
     align-items: center;
-    border-radius: 4px solid white;
+    border-radius: 40px;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
     margin-right: solid white;
 }
 h1{
-    color: orange;
+    color: Blue;
     align-items: center;
 
 }
 .About{
     
-        background-color: blue;
-        align-items: center;
-        border-radius: 4px solid white;
-        align-items: center;
-        justify-content: space-between;
-        padding: left 5px solid white;
+    background-color: white;
+    align-items: center;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin-right: solid white;   
 }
 
 

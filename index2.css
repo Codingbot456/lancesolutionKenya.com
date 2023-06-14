@@ -1,17 +1,13 @@
 h1{
-    background:red;
+    background:white;
     text-align: center;
-    color: white;
+    color: black;
 }
 .container{
-    background-color: black;
+    background-color: whitesmoke;
     text-align: left;
-    color: white;
-    background: black;
+    color: blue;
 }
 body{
-    background-color: black;
+    background-color: white;
 }
-
-
-/*location css/*
